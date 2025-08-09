@@ -268,7 +268,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-sm font-medium">Ver Projeto</p>
+                  <Link href={'https://vanass-nails.vercel.app'} className="text-sm font-medium">Ver Projeto</Link>
                 </div>
               </div>
               <CardContent className="p-6">
