@@ -48,6 +48,7 @@ export default function Home() {
           <nav className="hidden md:flex space-x-6">
             <a href="#sobre" className="text-gray-600 hover:text-blue-600 transition-colors">Sobre</a>
             <a href="#servicos" className="text-gray-600 hover:text-blue-600 transition-colors">Serviços</a>
+            <a href="#projetos" className="text-gray-600 hover:text-blue-600 transition-colors">Projetos</a>
             <a href="#tecnologias" className="text-gray-600 hover:text-blue-600 transition-colors">Tecnologias</a>
             <Link href="/contato" className="text-gray-600 hover:text-blue-600 transition-colors">Contato</Link>
           </nav>
@@ -82,7 +83,7 @@ export default function Home() {
               </Button>
             </Link>
             <Button size="lg" variant="outline" asChild>
-              <a href="#servicos">Ver Serviços</a>
+              <a href="#projetos">Ver Projetos</a>
             </Button>
           </div>
         </div>
@@ -210,6 +211,141 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Projetos Section */}
+      <section id="projetos" className="py-20 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Meus Projetos</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Alguns dos trabalhos que desenvolvi, mostrando minhas habilidades em desenvolvimento web e design
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Projeto 1 - E-commerce */}
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="/dashboardExemple.png"
+                  alt="E-commerce ModaStyle"
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <Link href={'https://alias-services.vercel.app'} className="text-sm font-medium">Ver Projeto</Link>
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-xl font-semibold">Alias Services</h3>
+                  <Badge variant="secondary" className="bg-green-100 text-green-700">
+                    Concluído
+                  </Badge>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Administrador financeiro e de vendas para empresas
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <Badge variant="outline" className="text-xs">Next.js</Badge>
+                  <Badge variant="outline" className="text-xs">TypeScript</Badge>
+                  <Badge variant="outline" className="text-xs">Tailwind</Badge>
+                  <Badge variant="outline" className="text-xs">Node.js</Badge>
+                </div>
+                <div className="flex items-center justify-between text-sm text-gray-500">
+                  <span>Desenvolvimento Web</span>
+                  <span>2024</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Projeto 2 - Site Institucional */}
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="/nails.png"
+                  alt="Site Clínica Saúde+"
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-sm font-medium">Ver Projeto</p>
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-xl font-semibold">Vanass Nails</h3>
+                  <Badge variant="secondary" className="bg-blue-100 text-blue-700">
+                    Ativo
+                  </Badge>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Site de agendamento de manicure
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <Badge variant="outline" className="text-xs">Next</Badge>
+                  <Badge variant="outline" className="text-xs">Typescript</Badge>
+                  <Badge variant="outline" className="text-xs">Tailwind</Badge>
+                  <Badge variant="outline" className="text-xs">Figma</Badge>
+                </div>
+                <div className="flex items-center justify-between text-sm text-gray-500">
+                  <span>Web + Design</span>
+                  <span>2025</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Projeto 3 - Identidade Visual */}
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="/house-burguer.png"
+                  alt="Identidade Visual Restaurante Sabor"
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <Link href={'https://burguer-house-six.vercel.app'} className="text-sm font-medium">Ver Projeto</Link>
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-xl font-semibold">Burguer House</h3>
+                  <Badge variant="secondary" className="bg-purple-100 text-purple-700">
+                    Design
+                  </Badge>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Identidade visual completa para restaurante, incluindo logo e
+                  cardápio digital.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <Badge variant="outline" className="text-xs">Photoshop</Badge>
+                  <Badge variant="outline" className="text-xs">Figma</Badge>
+                  <Badge variant="outline" className="text-xs">Design Gráfico</Badge>
+                  <Badge variant="outline" className="text-xs">Branding</Badge>
+                </div>
+                <div className="flex items-center justify-between text-sm text-gray-500">
+                  <span>Design Gráfico</span>
+                  <span>2024</span>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-gray-600 mb-6">
+              Gostou dos meus trabalhos? Vamos criar algo incrível para você também!
+            </p>
+            <Link href="/contato">
+              <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+                Solicitar Orçamento
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="container mx-auto text-center">
@@ -243,15 +379,15 @@ export default function Home() {
               <div className="space-y-2 text-gray-400">
                 <div className="flex items-center">
                   <Mail className="w-4 h-4 mr-2" />
-                  <span>lealgustavo0099@gmail.com</span>
+                  <Link href={'mailto:lealgustavo0099@gmail.com'}>lealgustavo0099@gmail.com</Link>
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-4 h-4 mr-2" />
-                  <span>+55 31 99064-1303</span>
+                  <Link href={'https://wa.me/5531990641303?text=Olá'}>+55 31 99064-1303</Link>
                 </div>
                 <div className="flex items-center">
                   <Instagram className="w-4 h-4 mr-2" />
-                  <span>@gs.devdesign</span>
+                  <Link href={'https://www.instagram.com/gs.devdesign'}>@gs.devdesign</Link>
                 </div>
               </div>
             </div>
