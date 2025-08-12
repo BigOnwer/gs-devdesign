@@ -73,7 +73,7 @@ export default function Home() {
             Gustavo Leal
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Desenvolvedor Full Stack Web e Designer Gráfico de 14 anos, criando soluções digitais modernas e impactantes
+            Desenvolvedor Full Stack Web e Designer Gráfico, criando soluções digitais modernas e impactantes
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contato">
