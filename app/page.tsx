@@ -102,7 +102,7 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-semibold mb-4">Minha Jornada</h3>
               <p className="text-gray-600 mb-6">
-                Aos 14 anos, já domino as principais tecnologias do mercado web e design gráfico. 
+                Domino as principais tecnologias do mercado web e design gráfico. 
                 Minha paixão é transformar ideias em realidade digital, criando sites funcionais e designs impactantes.
               </p>
               <div className="space-y-3">
